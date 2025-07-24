@@ -1,0 +1,268 @@
+
+<!-- index.html (About section cleaned & styled via CSS) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sonu Rajput | Cyber Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">SONU<span>.</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav id="mainMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#tools">Tools</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="left">
+      <h1>Hi, I'm <span>SONU RAJPUT</span></h1>
+      <h3>Student of Diploma [CIVIL]</h3>
+      <h3>Baddiuzama Khan Polytechnic Institute Pupri , SITAMARHI . </h3>
+      <p>🇮🇳 I'm learning Web Development in internship and building a personal portfolio website. Also exploring Cybersecurity and Kali Linux. 🔐</p>
+
+      <div class="btn-group">
+        <a href="#about" class="btn-primary">About me</a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+      </div>
+
+      <div style="margin-top: 60px;"></div>
+      <div class="social-icons">
+        <a href="https://github.com/kumarsinghsonu8422" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sonu-rajput-b402b92b9?" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://tryhackme.com/p/kumarsinghsonu84" target="_blank"><i class="fas fa-shield-alt"></i></a>
+        <a href="https://www.instagram.com/sonusinghrajput9504" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="right">
+      <img src= "C:\Users\PC\Desktop\213418a5-524d-439d-8fb2-606d447a82f4.jpg"alt="Hacker Image" />
+    </div>
+  </section>
+
+  <!-- About Section Only (Upgraded Design) -->
+<center>
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I'm <strong>Sonu Rajput</strong>, a passionate <span class="highlight">CIVIL diploma student</span> diving deep into the realms of <span class="highlight">cybersecurity, Linux</span> & <span class="highlight">web development</span>. I thrive on building powerful projects, exploring vulnerabilities, and automating tasks with tools like Nmap & Metasploit.
+      </p>
+      <ul>
+        <li><i class="fas fa-code"></i> <strong>Branch:</strong> CIVIL Engineering</li>
+        <li><i class="fas fa-graduation-cap"></i> <strong>Semester:</strong> 5th</li>
+        <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Sitamarhi, Bihar, India</li>
+        <li><i class="fas fa-tools"></i> <strong>Tools:</strong> Kali Linux, Metasploit, Nmap, Hydra</li>
+        <li><i class="fas fa-bug"></i> <strong>Interests:</strong> Bug Bounty, CTFs, Exploits</li>
+      </ul>
+    </div>
+  </section>
+</center>
+  <!-- Projects Section -->
+<center>
+  <section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Android Payload with FatRat</h3>
+        <p>Created a custom Android payload using FatRat & Localtonet for educational penetration testing.</p>
+        <a href="" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>OPPO Bug Bounty Report</h3>
+        <p>Reported security vulnerabilities in OPPO application through HackerOne platform.</p>
+      </div>
+      <div class="project-card">
+        <h3>Jarvis AI Assistant</h3>
+        <p>A Python-based bilingual (Hindi + English) voice assistant project with command-line interaction.</p>
+      </div>
+      <div class="project-card">
+        <h3>TryHackMe CTF Progress</h3>
+        <p>Completed beginner to intermediate rooms on TryHackMe to strengthen cybersecurity skills.</p>
+        <a href="https://github.com/kumarsinghsonu8422" target="_blank">TryHackMe Profile</a>
+      </div>
+    </div>
+
+    <!-- Centered Project Image -->
+    <div class="project-image">
+      <img src="C:\Users\PC\Desktop\1000_F_134821701_mcQ39O6Us7sURGZl82HTYEM3icmsD4kp.jpg" alt="Project Showcase">
+    </div>
+  </section>
+</center>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mainMenu");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
+<center>
+ <section id="tools" class="tools-section">
+    <h2>Tools I Use</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="toggleDetails(this)">
+        <i class="fas fa-terminal"></i>
+        <h3>Kali Linux</h3>
+        <p class="tool-details">A Linux distribution designed for digital forensics and penetration testing.</p>
+      </div>
+      <div class="tool-card" onclick="toggleDetails(this)">
+        <i class="fas fa-network-wired"></i>
+        <h3>Nmap</h3>
+        <p class="tool-details">A powerful network scanning tool used to discover hosts and services on a network.</p>
+      </div>
+      <div class="tool-card" onclick="toggleDetails(this)">
+        <i class="fas fa-bug"></i>
+        <h3>Metasploit</h3>
+        <p class="tool-details">A penetration testing framework that helps exploit known vulnerabilities.</p>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="toggleDetails(this)">
+        <i class="fas fa-lock"></i>
+        <h3>Hydra</h3>
+        <p class="tool-details">A fast and flexible password cracking tool for network login attacks.</p>
+      </div>
+      <div class="tool-card" onclick="toggleDetails(this)">
+        <i class="fas fa-user-secret"></i>
+        <h3>Burp Suite</h3>
+        <p class="tool-details">A web vulnerability scanner and proxy tool used for bug bounty and testing.</p>
+      </div>
+      <div class="tool-card" onclick="toggleDetails(this)">
+        <i class="fas fa-magic"></i>
+        <h3>SQLmap</h3>
+        <p class="tool-details">An automated tool for detecting and exploiting SQL injection flaws.</p>
+      </div>
+    </div>
+  </section>
+</center>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mainMenu");
+      nav.classList.toggle("active");
+    }
+
+    function toggleDetails(card) {
+      card.classList.toggle("expanded");
+    }
+  </script>
+</body>
+</html>
+<center>
+<section id="resume" class="resume-section" data-aos="fade-up">
+    <h2>Download My Resume</h2>
+    <div class="resume-button-wrapper">
+      <a href="C:\Users\saurav kumar\Downloads\myresume.pdf" download class="resume-btn">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </section>
+  </center>
+<center>
+<section id="contact" class="contact-section" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p><i class="fas fa-user"></i> Sonu Rajput</p>
+        <p><i class="fas fa-map-marker-alt"></i> Sitamarhi, Bihar, India - 843330</p>
+        <p><i class="fas fa-envelope"></i> kumarsinghsonu8422@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 93346 97695</p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919334697695" target="_blank" style="color:#0ef; text-decoration:underline;">Chat on WhatsApp</a></p>
+      </div>
+      <form class="contact-form" action="https://formsubmit.co/kumarsinghsonu8422@gmail.com" method="POST" data-aos="fade-left">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</center>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- <section id="projects" data-aos="zoom-in">
+<section id="tools" data-aos="fade-right"> -->
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
+
+
+<footer>
+    <p>&copy; 2025 <span>Sonu Rajput</span>. All rights reserved. | Made with ❤️ in <a href="https://github.com/kumarsinghsonu8422" target="_blank">GitHub</a></p>
+    <div class="footer-socials">
+      <a href="https://github.com/kumarsinghsonu8422" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sonu-rajput-b402b92b9?" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://tryhackme.com/p/kumarsinghsonu84" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:kumarsinghsonu8422@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/917250021311" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
